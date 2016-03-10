@@ -4,7 +4,9 @@
 
 html,
 body,
-#app {
+#app,
+#main,
+#main-container {
      height: 100%;
      width: 100%;
  }
