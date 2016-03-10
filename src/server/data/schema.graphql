@@ -1,0 +1,12 @@
+interface Node {
+  id: ID!
+}
+
+type Root {
+  viewer: Viewer
+  node(id: ID!): Node
+}
+
+type Viewer implements Node {
+  id: ID!
+}

@@ -1,0 +1,37 @@
+{
+  "name": "risk-quizz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/babel-cli/bin/babel.js src/server --out-dir build && webpack",
+    "start": "node build/server.js",
+    "update-schema": "babel-node src/tools/updateSchema.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-relay-plugin": "^0.7.3",
+    "express": "^4.13.4",
+    "express-graphql": "^0.4.9",
+    "graphiql": "^0.6.0",
+    "graphql": "^0.4.18",
+    "graphql-relay": "^0.3.6",
+    "path": "^0.12.7",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-relay": "^0.7.3",
+    "react-router": "^2.0.1",
+    "react-router-relay": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "webpack": "^1.12.14"
+  }
+}
